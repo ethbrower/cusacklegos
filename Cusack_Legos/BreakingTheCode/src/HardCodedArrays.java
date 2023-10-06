@@ -1,8 +1,10 @@
 package Cusack_Legos.BreakingTheCode.src;
 
-public final class HardCodedArrays {
+import java.util.*;
 
-    public static int[][] top_left;
+public class HardCodedArrays {
+
+    public int[][] top_left;
 
     public HardCodedArrays() {
         top_left = new int[][] {
@@ -22,15 +24,5 @@ public final class HardCodedArrays {
                 { 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1 },
                 { 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1 },
                 { 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1 } };
-    }
-
-
-    public void printSquareValues(int[][] square){
-        for(int[] arr : square){
-            for(int x : arr){
-                System.out.print(x + " ");
-            }
-            System.out.println();
-        }
     }
 }
